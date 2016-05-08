@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context="com.ydhl.smartchildren.RegisterActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/openbook_effect"
+        android:ems="10"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/open_app_lock_icon"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/open_app_lock_icon"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/abc_btn_radio_to_on_mtrl_015"
+        android:ems="10"
+        android:hint="请输入年龄"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/tel"
+        android:ems="10"
+        android:hint="请输入联系电话"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/openbook_effect"
+        android:ems="10"
+        android:hint="请输入监护人账号"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button1Register"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="#f80000"
+        android:text="@string/register" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText6"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="23dp"
+        android:background="#ff0000ff"
+        android:textOff="女"
+        android:textOn="男" />
+
+</RelativeLayout>

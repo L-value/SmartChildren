@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_think"
+    tools:context="com.ydhl.smartchildren.ThinkActivity" >
+
+    <FrameLayout
+        android:id="@+id/ro1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/roll" >
+
+        <Button
+            android:id="@+id/considerb11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/consider_cheetah_01"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/considerb1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/consider_cat_01" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ro2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/ro1"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/ro1"
+        android:background="@drawable/roll" >
+
+        <Button
+            android:id="@+id/considerb2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/consider_cat_02" />
+
+        <Button
+            android:id="@+id/considerb22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/consider_cheetah_02"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ro3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ro1"
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@+id/ro2"
+        android:background="@drawable/roll" >
+
+        <Button
+            android:id="@+id/considerb3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/consider_cat_03" />
+
+        <Button
+            android:id="@+id/considerb33"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/consider_cheetah_03"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ro4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/ro2"
+        android:layout_alignTop="@+id/ro3"
+        android:background="@drawable/roll" >
+
+        <Button
+            android:id="@+id/considerb4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/consider_cat_04" />
+
+        <Button
+            android:id="@+id/considerb44"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/consider_cheetah_04"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ro3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/consider_cat" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/ro2"
+        android:layout_marginTop="31dp"
+        android:text="分数为：0"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/consider_hudie1"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ro1"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/consider_hudie2"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ro3"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/consider_hudie3"
+        android:visibility="gone" />
+
+</RelativeLayout>

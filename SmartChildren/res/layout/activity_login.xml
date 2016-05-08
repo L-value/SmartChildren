@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register">
+
+
+    <com.ydhl.myview.ClearEditText
+        android:id="@+id/username"
+        android:layout_marginTop="120dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+      
+        android:drawableLeft="@drawable/openbook_effect"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:singleLine="true"
+        android:drawableRight="@drawable/search_delete_icon"
+        android:hint="输入用户名" >
+
+    </com.ydhl.myview.ClearEditText>
+
+    <com.ydhl.myview.ClearEditText
+        android:id="@+id/password"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:drawableLeft="@drawable/open_app_lock_icon"
+        android:hint="输入密码"
+        android:singleLine="true"
+        android:password="true"
+        android:drawableRight="@drawable/search_delete_icon"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/username"
+        >
+    </com.ydhl.myview.ClearEditText>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#008866"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" 
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="20dp"
+          android:textColor="@android:color/holo_red_light"
+        android:text="记住密码" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_alignRight="@+id/password"
+        android:textColor="@android:color/holo_red_light"
+        android:text="自动登陆" />
+
+    <TextView
+        android:id="@+id/textViewForgot"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ff0000ff"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/forgot" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+         android:layout_width="80dp"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:textColor="#ff0000ff"
+        android:text="@string/register" />
+
+</RelativeLayout>

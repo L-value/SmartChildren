@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_re2"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="33dp" />
+
+    <Button
+        android:id="@+id/downbutton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="83dp"
+        android:layout_marginLeft="54dp"
+        android:background="@drawable/hasdown"
+        android:text="已下载的游戏"
+        android:textColor="#ffffffff"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/anybutton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/downbutton"
+        android:layout_alignBottom="@+id/downbutton"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@+id/downbutton"
+        android:background="@drawable/optional"
+        android:text="随意玩"
+        android:textColor="#ffffffff"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/historybutton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/anybutton"
+        android:background="@drawable/history"
+        android:text="历史记录"
+        android:textColor="#ffffffff"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/everyday"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/historybutton"
+        android:layout_alignBottom="@+id/historybutton"
+        android:layout_alignLeft="@+id/anybutton"
+        android:background="@drawable/everyday"
+        android:text="每日故事"
+        android:textColor="#ffffffff"
+        android:textSize="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:background="#66ff0000"
+    tools:context="com.ydhl.smartchildren.FacadeActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:hint="输入信息需大于20字"
+        android:gravity="top"
+        android:layout_width="fill_parent"
+        android:focusable="true"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="120dp"
+        android:background="#6500ff00"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText1"
+        android:text="@string/commit" />
+
+</RelativeLayout>

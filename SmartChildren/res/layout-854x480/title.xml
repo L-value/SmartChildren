@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="44dp"
+        android:layout_weight="2"
+        android:background="@drawable/title" />
+
+	<TextView
+	    android:layout_weight="8"
+	    android:layout_width="fill_parent"
+	    android:layout_height="44dp" 
+	    android:background="#ffb5e629"
+	    android:text="睿 智 儿 童"
+	    android:textColor="#ff000000"
+	    android:textSize="20dp"
+	    android:gravity="center"/>
+
+    <ImageButton
+        android:layout_weight="2"
+        android:id="@+id/tpopButton"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:background="@drawable/login_"
+        android:onClick="onPopupButtonClick" />
+
+</LinearLayout>

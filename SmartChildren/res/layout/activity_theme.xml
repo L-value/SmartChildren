@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context="com.ydhl.smartchildren.ThemeActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#ee82ee"
+        android:text="主题"
+        android:textSize="16dp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="0dp" >
+
+
+    <RelativeLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/button1" >
+
+        <LinearLayout
+             android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/image01"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg01" />
+
+            <ImageButton
+                android:id="@+id/image02"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg03" />
+
+            <ImageButton
+                android:id="@+id/image03"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_04" />
+      </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
